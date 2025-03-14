@@ -1,0 +1,95 @@
+.coffeshop {
+  &__body {
+    padding: 22px 0px;
+  }
+
+  &__title {
+  }
+
+  &__text {
+    padding: 20px 0px 0px 0px;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    text-align: center;
+    @media (max-width: ($md2)) {
+      max-width: 728px;
+      margin: 0 auto;
+    }
+  }
+
+  &__prices {
+  }
+}
+
+.prices {
+  display: flex;
+  padding-top: 40px;
+  justify-content: space-between;
+  @media (max-width: ($md2)) {
+    flex-direction: column;
+    gap: 40px;
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    &-right {
+      margin-right: 2px;
+    }
+    @media (max-width: ($md2)) {
+      padding: 0px 20px;
+    }
+  }
+
+  &__title {
+    color: $buttonsColor;
+    &-left {
+      text-align: left;
+    }
+    &-right {
+      text-align: right;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 57px;
+    justify-content: space-between;
+    width: 438px;
+    &-right {
+      width: 458px;
+      @media (max-width: ($md2)) {
+        align-self: flex-end;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    width: 300px;
+    &-right {
+      text-align: right;
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  &__line {
+    width: 100px;
+    height: 1px;
+    background-color: $buttonsColor;
+  }
+
+  &__cost {
+  }
+}
